@@ -17,15 +17,19 @@ describe('para validar el homepage de mi Ecommerce', () => {
 
   it('hacer login exitoso', () => {
     cy.fixture('loginData').then((data) => {
-      LoginActions.loguearUsuario(data.validUser.email, data.validUser.password)
-      LoginActions.validarURL('route=account/account')
+      data.validUser.forEach((usuario) => {
+        LoginActions.loguearUsuario(usuario.email, usuario.password)
+        LoginActions.validarURL('route=account/account')  
+      })
     })
   })
 
   it('hacer login fallido', () => {
     cy.fixture('loginData').then((data) => {
-      LoginActions.loguearUsuario(data.invalidUser.email, data.invalidUser.password)
-      LoginActions.validarMensajeError('Warning: No match for E-Mail Address and/or Password.')
+      data.invalidUser.forEach((usuario) => {
+        LoginActions.loguearUsuario(usuario.email, usuario.password)
+        LoginActions.validarMensajeError('Warning: No match for E-Mail Address and/or Password.')
+      })
   })
 })
 

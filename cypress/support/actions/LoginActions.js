@@ -14,6 +14,8 @@ class LoginActions {
             expect(text.replace(/\u00a0/g, '')).to.contain(mensaje.replace(/\u00a0/g, '')
             )
         })
+        cy.get('.btn-close').should('be.visible')
+        cy.get('.btn-close').click()
      }
     //Todos los metodos de login
 }
