@@ -82,3 +82,15 @@ cy.get('input').type('{tab}') -> Tab
 cy.get('input').type('{selectall}') -> Seleccionar todo
 cy.get('input').type('{backspace}') -> Borrar
 */
+
+
+/* Comandos de GIT
+git init -> Inicializa un repositorio
+git add . -> Agrega todos los archivos al stage
+git commit -m "Mensaje" -> Crea un commit
+git status -> Muestra el estado del repositorio
+pit pull origin master -> Trae los cambios del repositorio remoto
+git push origin master -> Sube los cambios al repositorio remoto
+git branch -> Muestra las ramas
+git checkout -b "Nombre de la rama" -> Crea una rama
+*/
