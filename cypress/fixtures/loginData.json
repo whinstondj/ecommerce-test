@@ -1,10 +1,16 @@
 {
-    "validUser": {
+    "validUser": [{
         "email": "winston@winstoncastillo.com",
         "password": "pyz4tnz*xdc0HUM-afj"
-    },
-    "invalidUser": {
-        "email": "winston",
+    }],
+    "invalidUser": [
+        {
+        "email": "winston@otro.com",
         "password": "12345"
-    }
+        },
+        {
+        "email": "otro@otro.com",
+        "password": "12345"
+        }
+    ]
 }
