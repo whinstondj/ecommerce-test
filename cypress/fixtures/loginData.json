@@ -1,0 +1,10 @@
+{
+    "validUser": {
+        "email": "winston@winstoncastillo.com",
+        "password": "pyz4tnz*xdc0HUM-afj"
+    },
+    "invalidUser": {
+        "email": "winston",
+        "password": "12345"
+    }
+}
